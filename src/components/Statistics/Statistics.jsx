@@ -10,7 +10,7 @@ import {
 export function Statistics({ title, stats }) {
   return (
     <StatisticsSection>
-      {{ title } && <Title>{title}</Title>}
+      {title && <Title>{title}</Title>}
 
       <List>
         {stats.map(({ id, label, percentage }) => {
